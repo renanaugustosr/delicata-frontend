@@ -1,3 +1,6 @@
+//Arquivo para iniciar o Angular
+
+
 //Importa as dependências que acabamos de instalar
 const express = require('express');
 const path = require('path');
