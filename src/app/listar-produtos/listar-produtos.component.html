@@ -1,0 +1,29 @@
+<div class="main-content">
+    <div class="container-fluid">
+
+        <div class="row">
+
+                <div class="col-md-4" *ngFor="let produto of produtos" >
+                    <div class="card card-chart">
+                        <div class="card-header card-header-success">
+                            <div class="ct-chart" id="dailySalesChart">
+                                <img src="http://localhost:3000/{{produto.pathFoto}}" width="100px" height="100px">
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title">{{produto.nome}}</h4>
+                            <p class="card-category">
+                                <span class="text-success"><i class="fa fa-long-arrow-up"></i> Quantidade {{produto.quantidade}} </span></p>
+                        </div>
+                        <div class="card-footer">
+                            <div class="stats">
+                                <i class="material-icons">access_time</i> R$  {{produto.valorUnitario}}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+        </div>
+
+    </div>
+  </div>
