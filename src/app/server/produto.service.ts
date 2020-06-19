@@ -10,7 +10,7 @@ import { MessageService } from './message.service'
 })
 export class ProdutoService {
 
-    private usersUrl = 'https://delicata-backend.herokuapp.com/';
+    private usersUrl = 'https://delicata-backend.herokuapp.com';
 
     /*testando: Teste = {
         "nome": "ola"
