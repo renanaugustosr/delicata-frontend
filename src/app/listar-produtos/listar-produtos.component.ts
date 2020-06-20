@@ -10,6 +10,7 @@ import { ProdutoService } from '../server/produto.service'
 export class ListarProdutosComponent implements OnInit {
 
   produtos: Produto[];
+  urlFoto: 'https://delicata-backend.herokuapp.com';
 
   constructor(private produtoService: ProdutoService) { }
 
