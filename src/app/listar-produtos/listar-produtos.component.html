@@ -10,10 +10,11 @@
 
                 <div class="col-md-4" *ngFor="let produto of produtos" >
                     <div class="card card-chart">
-                        <div class="card-header card-header-success">
-                            <div class="ct-chart" id="dailySalesChart">
-                                <img src="{{urlFoto}}/{{produto.pathFoto}}" width="100px" height="100px">
-                            </div>
+                        <div class="card-header">
+                            <!--<div class="ct-chart" id="dailySalesChart">
+                                
+                            </div> -->
+                            <img src="{{urlFoto}}/{{produto.pathFoto}}" width="100px" height="100px">
                         </div>
                         <div class="card-body">
                             <h4 class="card-title">{{produto.nome}}</h4>
