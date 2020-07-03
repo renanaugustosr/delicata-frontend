@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { RouterModule } from '@angular/router';
+import { BrowserModule, Title }  from '@angular/platform-browser';
 
 
 import { AppRoutingModule } from './app.routing';
@@ -37,7 +38,8 @@ import { ListarProdutosComponent } from './listar-produtos/listar-produtos.compo
     HttpClientModule,
     AgmCoreModule.forRoot({
       apiKey: 'YOUR_GOOGLE_MAPS_API_KEY'
-    })
+    }),
+    BrowserModule
   ],
   declarations: [
     AppComponent,
@@ -45,7 +47,9 @@ import { ListarProdutosComponent } from './listar-produtos/listar-produtos.compo
     ListarProdutosComponent,
 
   ],
-  providers: [],
+  providers: [
+    Title
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

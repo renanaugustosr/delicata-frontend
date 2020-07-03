@@ -1,4 +1,5 @@
 import { Component} from '@angular/core';
+import { Title } from '@angular/platform-browser';
 
 
 @Component({
@@ -7,5 +8,9 @@ import { Component} from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  public constructor(private titleService: Title ) { }
 
+  public setTitle() {
+    this.titleService.setTitle( "Delicata" );
+  }
 }
