@@ -9,7 +9,7 @@ import { FormBuilder, FormGroup } from '@angular/forms';
 })
 export class NovoConsultorComponent implements OnInit {
 
-  private checkoutForm: FormGroup;
+  checkoutForm: FormGroup;
   error: string;
   constructor(private consultorService: ConsultorService, public fb: FormBuilder ) { }
 
