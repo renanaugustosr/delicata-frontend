@@ -5,5 +5,5 @@ export interface Produto {
     valorTotal: Number,
     dataCompra: Date,
     dataVenda: Date,
-    pathFoto: String
+    pathFoto: string
 };

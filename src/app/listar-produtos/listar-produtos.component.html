@@ -1,15 +1,10 @@
-<meta property="og:site_name" content="San Roque 2014 Pollos">
-<meta property="og:title" content="San Roque 2014 Pollos" />
-<meta property="og:description" content="Programa de fiestas" />
-<meta property="og:image" itemprop="image" content="http://pollosweb.wesped.es/programa_pollos/play.png">
-<meta property="og:type" content="website" />
 <div class="main-content">
     <div class="container-fluid">
 
         <div class="row">
 
                 <div class="col-md-4" *ngFor="let produto of produtos" >
-                    <div class="card card-chart">
+                    <div class="card card-chart" (click)="verDetalhesProduto(produto)">
                         <div class="card-header">
                             <!--<div class="ct-chart" id="dailySalesChart">
                                 
@@ -26,7 +21,7 @@
                                 <i class="material-icons">access_time</i> R$  {{produto.valorUnitario}}
                             </div>
                             <div>
-                                <a href="https://api.whatsapp.com/send?text=https://delicata-frontend.herokuapp.com/#/dashboard"><img src="/assets/img/bc-whats.png"></a>
+                                
                             </div>
                         </div>
                     </div>

@@ -31,7 +31,6 @@ export class ProdutoService {
     */
     getProdutos(): Observable<Produto[]> {
         let a = this.http.get<Produto[]>(this.usersUrl + '/Produtos');
-        console.log(a)
         return a
     }
 

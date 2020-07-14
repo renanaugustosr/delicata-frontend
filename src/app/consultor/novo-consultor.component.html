@@ -1,0 +1,42 @@
+<div class="main-content">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12">
+          <div>
+            <div *ngIf="error" class="alert alert-danger">
+              <button mat-button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <i class="material-icons">close</i>
+              </button>
+              {{ error.message }}
+            </div>
+
+            <div class="card">
+              <div class="card-header card-header-danger">
+                <h4 class="card-title">Cadastro de Consultor</h4>
+              </div>
+              <div class="card-body">
+                <form [formGroup]="checkoutForm" (ngSubmit)="onSubmit()">
+                  <div class="row">
+                    <div class="col-md-5">
+                      <mat-form-field class="example-full-width">
+                        <input matInput placeholder="Nome" formControlName="nome">
+                      </mat-form-field>
+                    </div>
+                    <div class="col-md-3">
+                      <mat-form-field class="example-full-width">
+                        <input matInput placeholder="Telefone" type="number" formControlName="telefone">
+                      </mat-form-field>
+                    </div>
+  
+                  </div>
+
+                  <button mat-raised-button type="submit" class="btn btn-danger pull-right">Salvar</button>
+                  <div class="clearfix"></div>
+                </form>
+              </div>
+            </div>
+          </div>
+  
+        </div>
+      </div>
+    </div>

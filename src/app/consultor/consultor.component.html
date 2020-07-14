@@ -1,0 +1,33 @@
+<div class="main-content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-header card-header-danger">
+                        <h4 class="card-title ">Consultores</h4>
+                    </div>
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table class="table">
+                                <thead class=" text-primary">
+                                    <th>ID</th>
+                                    <th>Nome</th>
+                                    <th>Telefone</th>
+                                </thead>
+                                <tbody>
+                                    <tr *ngFor="let consultor of consultores">
+                                        <td>{{consultor._id}}</td>
+                                        <td>{{consultor.nome}}</td>
+                                        <td>{{consultor.telefone}}</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    
+                </div>
+                <a mat-fab type="button" class="btn pull-right" routerLink="/novoConsultor">Novo</a>
+            </div>
+        </div>
+    </div>
+</div>

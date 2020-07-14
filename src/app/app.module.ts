@@ -25,6 +25,10 @@ import { AgmCoreModule } from '@agm/core';
 import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.component';
 import { CadastroProdutoComponent } from './cadastro-produto/cadastro-produto.component';
 import { ListarProdutosComponent } from './listar-produtos/listar-produtos.component';
+import { VerProdutoComponent } from './ver-produto/ver-produto.component';
+import { ConsultorComponent } from './consultor/consultor.component';
+import { NovoConsultorComponent } from './consultor/novo-consultor.component';
+import { MatInputModule } from '@angular/material/input';
 
 @NgModule({
   imports: [
@@ -39,12 +43,16 @@ import { ListarProdutosComponent } from './listar-produtos/listar-produtos.compo
     AgmCoreModule.forRoot({
       apiKey: 'YOUR_GOOGLE_MAPS_API_KEY'
     }),
-    BrowserModule
+    BrowserModule,
+    MatInputModule,
   ],
   declarations: [
     AppComponent,
     AdminLayoutComponent,
     ListarProdutosComponent,
+    VerProdutoComponent,
+    ConsultorComponent,
+    NovoConsultorComponent,
 
   ],
   providers: [

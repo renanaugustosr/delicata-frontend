@@ -9,7 +9,10 @@ import { MapsComponent } from '../../maps/maps.component';
 import { NotificationsComponent } from '../../notifications/notifications.component';
 import { UpgradeComponent } from '../../upgrade/upgrade.component';
 import { ListarProdutosComponent } from '../../listar-produtos/listar-produtos.component'
-import { CadastroProdutoComponent } from '../../cadastro-produto/cadastro-produto.component'
+import { CadastroProdutoComponent } from '../../cadastro-produto/cadastro-produto.component';
+import { VerProdutoComponent } from '../../ver-produto/ver-produto.component'
+import { ConsultorComponent } from 'app/consultor/consultor.component';
+import { NovoConsultorComponent } from 'app/consultor/novo-consultor.component';
 
 export const AdminLayoutRoutes: Routes = [
     // {
@@ -63,5 +66,8 @@ export const AdminLayoutRoutes: Routes = [
     { path: 'notifications',  component: NotificationsComponent },
     { path: 'upgrade',        component: UpgradeComponent },
     { path: 'listarProdutos', component: ListarProdutosComponent },
-    { path: 'cadastro',       component: CadastroProdutoComponent }
+    { path: 'cadastro',       component: CadastroProdutoComponent },
+    { path: 'verProduto',     component: VerProdutoComponent },
+    { path: 'consultor',      component: ConsultorComponent },
+    { path: 'novoConsultor',   component: NovoConsultorComponent}
 ];
