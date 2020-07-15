@@ -33,11 +33,7 @@ export class VerProdutoComponent implements OnInit {
     console.log(this.produtoSelecionado);
 
     this.meta.addTags([
-      { property: 'og:site_name', content: 'Delicata' },
-      { property: 'og:title', content: 'Delicata Pijamas' },
-      { property: 'og:description', content: 'Os melhores pijamos do Brasil' },
-     // { property: 'og:image', content: this.urlFoto+'/'+this.produtoSelecionado.pathFoto },
-      { property: 'og:type', content: 'website' }
+      { property: 'og:image', content: this.urlFoto+'/'+this.produtoSelecionado.pathFoto },
     ]);
   }
 }
