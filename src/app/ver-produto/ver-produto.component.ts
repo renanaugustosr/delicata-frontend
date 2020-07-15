@@ -20,9 +20,17 @@ export class VerProdutoComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    console.log(this._id);
+    
    // this.produtoSelecionado = this.produtoService.getProduto(this._id);
-    this.produtoService.getProduto(this._id).subscribe(produto => this.produtoSelecionado = produto);
+    this.produtoService.getProduto(this._id).subscribe(produto => {
+      this.produtoSelecionado = produto;
+      this.configuracoes();
+    });
+    
+  }
+
+  configuracoes(){
+    console.log(this.produtoSelecionado);
 
     this.meta.addTags([
       { property: 'og:site_name', content: 'Delicata' },
@@ -32,7 +40,4 @@ export class VerProdutoComponent implements OnInit {
       { property: 'og:type', content: 'website' }
     ]);
   }
-
 }
-
-
