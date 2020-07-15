@@ -67,7 +67,7 @@ export const AdminLayoutRoutes: Routes = [
     { path: 'upgrade',        component: UpgradeComponent },
     { path: 'listarProdutos', component: ListarProdutosComponent },
     { path: 'cadastro',       component: CadastroProdutoComponent },
-    { path: 'verProduto',     component: VerProdutoComponent },
+    { path: 'verProduto/:_id',component: VerProdutoComponent },
     { path: 'consultor',      component: ConsultorComponent },
-    { path: 'novoConsultor',   component: NovoConsultorComponent}
+    { path: 'novoConsultor',  component: NovoConsultorComponent}
 ];

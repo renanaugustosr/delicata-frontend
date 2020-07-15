@@ -1,4 +1,5 @@
 export interface Produto {
+    _id: string,
     nome: String,
     quantidade: String,
     valorUnitario: Number,

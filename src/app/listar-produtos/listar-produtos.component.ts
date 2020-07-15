@@ -28,8 +28,8 @@ export class ListarProdutosComponent implements OnInit {
   }
 
   verDetalhesProduto(produto: Produto){
-    this.produtoSelecionado.setProduto(produto);
-    this.router.navigateByUrl("/verProduto");
+    //this.produtoSelecionado.setProduto(produto);
+    this.router.navigateByUrl("/verProduto/" + produto._id);
   }
 
 }

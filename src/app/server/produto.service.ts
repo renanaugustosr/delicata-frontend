@@ -34,6 +34,11 @@ export class ProdutoService {
         return a
     }
 
+    getProduto(_id: string): Observable<Produto> {
+        let a = this.http.get<Produto>(this.usersUrl + '/Produto/' + _id);
+        return a
+    }
+
     setProduto(produto: any): Observable<any> {
 
         return this.http.post<any>(this.usersUrl + "/Produtos", produto, {

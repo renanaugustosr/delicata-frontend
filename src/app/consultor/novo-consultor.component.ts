@@ -11,7 +11,7 @@ export class NovoConsultorComponent implements OnInit {
 
   checkoutForm: FormGroup;
   error: string;
-  constructor(private consultorService: ConsultorService, public fb: FormBuilder ) { }
+  constructor(private consultorService: ConsultorService, public fb: FormBuilder) { }
 
   ngOnInit(): void {
     this.checkoutForm = this.fb.group({
